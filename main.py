@@ -33,7 +33,7 @@ def main():
     
     if uploaded_file is not None:
         # Read CSV
-        df = pd.read_csv(uploaded_file)
+        df = pd.read_csv(uploaded_file,encoding="utf-8")
 
         # Display the uploaded data
         st.write("Uploaded Data")
